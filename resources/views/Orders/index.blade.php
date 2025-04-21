@@ -9,23 +9,23 @@
 @endphp
 
 @section('content')
-    <div class="card">
+    <div class="card bg-dark text-light">
         <div class="card-body">
             <div class="container">
                 <div class="row mb-3">
                     <div class="col-md-12 text-center">
-                        <h2 class="display-4"> Orders List Of {{ Auth::user()->name }} </h2>
+                        <h2 class="display-4 fw-bold"> Orders List Of {{ Auth::user()->name }} </h2>
                     </div>
                 </div>
             </div>
 
             <div class="container-fluid">
-                <div class="card">
+                <div class="card bg-dark text-light">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 bg-dark text-light">
                                 <div class="table-responsive">
-                                    <table class="table" id="orders">
+                                    <table class="table table-bordered table-dark" id="orders">
                                         <thead>
                                             <tr>
                                                 <th>
